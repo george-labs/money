@@ -1,0 +1,59 @@
+#!/bin/sh -e
+### BEGIN INIT INFO
+# Provides:          money
+# Required-Start:    $mongodb $local_fs $remote_fs $network $syslog
+# Required-Stop:     $mongodb $local_fs $remote_fs $network $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: starts the money application server
+# Description:       starts money using start-stop-daemon
+### END INIT INFO
+
+# MONEY Startup Script
+
+MONEY_HOME=/opt/money; export MONEY_HOME
+MONEY_OWNER=admin; export MONEY_OWNER
+
+if [ "$2" = "internal" ]; then
+    INTERNALINSTANCE=true; export INTERNALINSTANCE
+fi
+
+start() {
+    echo -n "Starting MONEY: "
+    cd $MONEY_HOME
+    if [ `whoami` != "$MONEY_OWNER" ]; then
+        su $MONEY_OWNER -c "mkdir -p logs"
+        su $MONEY_OWNER -c "forever start --minUptime 10000 -a -l $MONEY_HOME/logs/forever.log -o $MONEY_HOME/logs/out.log -e $MONEY_HOME/logs/err.log ./money.js"
+    else
+        # required for jenkins (silent, i.e. no password input)
+        mkdir -p logs
+        forever start --minUptime 10000 -a -l $MONEY_HOME/logs/forever.log -o $MONEY_HOME/logs/out.log -e $MONEY_HOME/logs/err.log ./money.js
+    fi
+    sleep 2
+}
+stop() {
+    echo -n "Stopping MONEY: "
+    cd $MONEY_HOME
+    if [ `whoami` != "$MONEY_OWNER" ]; then
+        su $MONEY_OWNER -c "forever stop money.js"
+    else
+        forever stop money.js
+    fi
+}
+
+# See how we were called.
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: money {start|stop|restart}"
+        exit
+esac
