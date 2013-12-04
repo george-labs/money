@@ -1,0 +1,125 @@
+extends /page
+
+
+block content
+    .result(role='main', id=page.name)
+        h2.banner.note.emphasis.invert
+            - var pageElement = pageElements['header']
+            include /elements/element
+
+        - var persona = isAdmin ? 0 : result.index
+
+        .persona(class='persona-' + persona)
+            h2.tagline.caption.emphasis.invert.align-center
+                if isAdmin
+                    i.seat-filler Calculated persona will be inserted here
+                else
+                    - var pageElement = pageElements['persona-' + persona + '-tagline']
+                    include /elements/element
+            .characterization.highlight
+                if isAdmin
+                    p.seat-filler
+                        | The description for the calculated persona will be inserted here.
+                        | There will be some text with a cartoon character right next to it.
+                        | Scroll down to see all five characters and translate them accordingly.
+                        br
+                        br
+                        | Each character comes with a set of three different “call to action” links shown below,
+                        | that can be customised and lead to different part (products) of your website.
+                else
+                    - var pageElement = pageElements['persona-' + persona + '-description']
+                    include /elements/element
+
+        .details.clearfix
+            .column
+                .actions
+                    - var pageElement = pageElements['action-rubric']
+                    include /elements/element
+                    ul.semantic
+                        each action in [1, 2, 3]
+                            li.action.highlight(class='action-' + action)
+                                p
+                                    if isAdmin
+                                        i.seat-filler
+                                            span.label.caption.emphasis.invert Action ##{action}
+                                            if action === 1
+                                                |  for the calculated persona will be inserted right here, which is then followed by&#32;
+                                            else if action === 2
+                                                |  will be inserted here, once again followed by&#32;
+                                            else
+                                                |  will be inserted here. I think by now you get the idea. However, for completeness sake, even this one is followed by&#32;
+                                            a
+                                                if action === 1
+                                                    | a “call to action” link…
+                                                else if action === 2
+                                                    | a link…
+                                                else
+                                                    | another link…
+                                    else
+                                        span.label.caption.emphasis.invert
+                                            - var pageElement = pageElements['persona-' + persona + '-action-' + action + '-label']
+                                            include /elements/element
+                                        | &#32;
+                                        - var pageElement = pageElements['persona-' + persona + '-action-' + action + '-body']
+                                        include /elements/element
+                                        | &#32;
+                                        - var pageElement = pageElements['persona-' + persona + '-action-' + action + '-link']
+                                        include /elements/element
+            .column
+                .comparison.highlight
+                    - var pageElement = pageElements['compare-rubric']
+                    include /elements/element
+                    p
+                        span.chart
+                        span.label.caption.emphasis.invert(class=isAdmin ? 'seat-filler' : '')= (isAdmin ? 20 : result.percentage[result.persona]) + '%'
+                        | &#32;
+                        - var pageElement = pageElements['compare-description']
+                        include /elements/element
+                .sharing
+                    - var pageElement = pageElements['share-rubric']
+                    include /elements/element
+                    ul.semantic.clearfix
+                        li
+                            - var pageElement = pageElements['share-facebook']
+                            a.ir(href='/share/facebook', target='_blank', title=pageElement.getProperty('Text').value)
+                                include /elements/element
+                        li
+                            - var pageElement = pageElements['share-twitter']
+                            a.ir(href='/share/twitter', target='_blank', title=pageElement.getProperty('Text').value)
+                                include /elements/element
+                        li
+                            - var pageElement = pageElements['share-googleplus']
+                            a.ir(href='/share/googleplus', target='_blank', title=pageElement.getProperty('Text').value)
+                                include /elements/element
+
+        a.banner.note.emphasis.invert.fix-MNY-123(href='get-ready')
+            - var pageElement = pageElements['start-again']
+            include /elements/element
+
+        if isAdmin
+            ul.semantic.personas
+                each persona in [1, 2, 3, 4, 5]
+                    li
+                        .persona(class='persona-' + persona)
+                            h2.tagline.caption.emphasis.invert.align-center
+                                - var pageElement = pageElements['persona-' + persona + '-tagline']
+                                include /elements/element
+                            .characterization.highlight
+                                - var pageElement = pageElements['persona-' + persona + '-description']
+                                include /elements/element
+                        .details.clearfix
+                            .column
+                                .actions
+                                    ul.semantic
+                                        each action in [1, 2, 3]
+                                            li.action.highlight(class='action-' + action)
+                                                p
+                                                    span.label.caption.emphasis.invert
+                                                        - var pageElement = pageElements['persona-' + persona + '-action-' + action + '-label']
+                                                        include /elements/element
+                                                    | &#32;
+                                                    - var pageElement = pageElements['persona-' + persona + '-action-' + action + '-body']
+                                                    include /elements/element
+                                                    | &#32;
+                                                    - var pageElement = pageElements['persona-' + persona + '-action-' + action + '-link']
+                                                    include /elements/element

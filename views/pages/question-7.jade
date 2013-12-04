@@ -1,0 +1,40 @@
+extends /page
+
+block content
+
+    form.question.question-7.freeze(role='main', id=page.name, method='POST', action=nextPage.name)
+        .progress.note.invert 7/8
+
+        .instruction
+            - var pageElement = pageElements['instruction']
+            include /elements/element
+
+        .context.note.emphasis
+            - var pageElement = pageElements['question']
+            include /elements/element
+
+        ol.semantic.postits
+            each postit, index in page.getElements('list-')
+                - var postitNumber = index + 1;
+                li.postit.inactive.note.emphasis(id='postit-#{postitNumber}')
+                    h2= postitNumber
+                    - var pageElement = postit
+                    input.hidden(type='radio', name='q7', id=pageElement.uid, value=postitNumber)
+                    include /elements/element
+
+        .continue.default.hidden.note.emphasis.invert
+            a.done(href=nextPage.name)
+                - var pageElement = pageElements['done']
+                include /elements/element
+            input.hidden(type='submit', name='q', value='7')
+
+        if !isAdmin
+            .svg-frame(id='svg-frame')
+                .q7-svg.trash
+                .q7-svg.postits
+                    each postit, index in page.getElements('list-')
+                        - var postitNumber = index + 1;
+                        .postit-frame.selectable.note.emphasis(id='postit-frame-#{postitNumber}')
+                            h2= postitNumber
+                            - var pageElement = postit
+                            include /elements/element

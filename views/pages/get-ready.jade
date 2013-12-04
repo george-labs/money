@@ -1,0 +1,11 @@
+extends /page
+
+block content
+    .get-ready.freeze(role='main')
+        .introduction.caption.invert.emphasis
+            - var pageElement = pageElements['introduction']
+            include /elements/element
+        .start.note.invert.emphasis
+            a(href=nextPage.name)
+                - var pageElement = pageElements['start']
+                include /elements/element

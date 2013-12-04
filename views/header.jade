@@ -1,0 +1,33 @@
+if menuPage
+    header
+        h1.note.emphasis
+            a.branding-text(href='/', title=menuPage.getElement('navigation-home').getProperty('Text').value)
+                strong.title.caption= config.title
+                span.hidden #{' — '}
+                - var pageElement = menuPage.getElement('tagline')
+                include /elements/element
+        nav.note.emphasis
+            ul
+                li.hidden
+                    a.branding-text.hidden(href='/')
+                        - var pageElement = menuPage.getElement('navigation-home')
+                        include /elements/element
+                li
+                    a.branding-text(href='/about')
+                        - var pageElement = menuPage.getElement('navigation-about')
+                        include /elements/element
+                li
+                    a.branding-text(href='/imprint')
+                        - var pageElement = menuPage.getElement('navigation-imprint')
+                        include /elements/element
+                li
+                    a.branding-text(href='/disclaimer')
+                        - var pageElement = menuPage.getElement('navigation-disclaimer')
+                        include /elements/element
+            #company
+                if config.ci.url
+                    a(href=config.ci.url, target='_blank')
+                        img(src=config.ci.logoUrl)
+                else
+                    img(src=config.ci.logoUrl)
+        hr.hidden

@@ -1,0 +1,17 @@
+extends /page
+
+block content
+    .calculation(role='main', id=page.name)
+        .progress.finished.note.invert.ir &#x2713;
+
+        .instruction
+            - var pageElement = pageElements['instruction']
+            include /elements/element
+
+        .caption.emphasis.invert
+            - var pageElement = pageElements['calculation']
+            include /elements/element
+
+        a.inactive.banner.note.emphasis.invert(href=nextPage.name)
+            - var pageElement = pageElements['discover']
+            include /elements/element

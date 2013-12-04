@@ -1,12 +1,37 @@
 {
-  "name": "MONEY",
+  "name": "moneyfhc",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
-    "start": "money.js"
+    "start": "node money"
   },
   "dependencies": {
-    "express": "3.1.2",
-    "jade": "*"
+    "express": "3.2.x",
+    "jade": "0.32.x",
+    "less-middleware": "*",
+    "mongoose": "3.6.x",
+    "connect-mongo": "0.3.x",
+    "async": "0.2.x",
+    "nconf": "0.6.x",
+    "cron": "1.0.x",
+    "passport": "0.1.16",
+    "passport-local": "0.1.6",
+    "connect-flash": "0.1.1",
+    "connect-ensure-login": "0.1.1",
+    "bcrypt": "0.7.5",
+    "validator": "1.1.x",
+    "passport-remember-me": "0.0.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-jsonmin": "~0.2.4",
+    "grunt-svgmin": "~0.3.0",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jade": "~0.8.0",
+    "grunt-contrib-less": "~0.8.0",
+    "grunt-contrib-cssmin": "~0.6.2"
   }
 }

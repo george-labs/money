@@ -1,0 +1,32 @@
+if user.role !== 'chiefeditor'
+    .inset
+        span.label.cover Restore snapshot
+        if appVersions.length === 0
+            .hint No snapshots taken yet.
+    if appVersions.length > 0
+        ul.restore-options.semantic.inset
+            li
+                input.settings(type="checkbox", name="settings", id="restoreSettings")
+                label(for="restoreSettings") Metadata
+            li
+                input.brandings(type="checkbox", name="brandings", id="restoreBrandings")
+                label(for='restoreBrandings') Brandings
+            li
+                input.pages(type="checkbox", name="pages", id="restorePages", checked=true)
+                label(for='restorePages') Translations
+        ul.semantic.menu
+            each appVersion, i in appVersions
+                number = appVersions.length - 1 - i
+                li.removeable.app-version-item(data-id="#{appVersion._id}")
+                    a.line(href="#restore-snapshot-#{number}", data-id="#{appVersion._id}", class="app-version-restore")
+                        - var dateValue = appVersion.creationDate.getFullYear() + '-' + ('0' + (appVersion.creationDate.getMonth() + 1)).slice(-2) + '-' + ('0' + appVersion.creationDate.getDate()).slice(-2);
+                        - var timeValue = ('0' + appVersion.creationDate.getHours()).slice(-2) + ':' + ('0' + appVersion.creationDate.getMinutes()).slice(-2) + ':' + ('0' + appVersion.creationDate.getSeconds()).slice(-2);
+                        - var machina = dateValue.replace(/\-/g, '') + 'T' + timeValue.replace(/\:/g, '');
+                        data(value=machina)
+                            = dateValue + ' '
+                            if appVersion.tag === ''
+                                = timeValue
+                            else
+                                b= appVersion.tag
+                    a.additional-action.remove(href="#delete-snapshot-#{number}")
+                        span.icon-trash

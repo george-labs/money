@@ -1,0 +1,26 @@
+if isAdmin
+    section.group.collapsed
+        h2.group-header
+            a(href="#toolbox-pages") Pages
+        nav#toolbox-pages.group-content
+            ul.page-selector.menu
+                each displayPage in pages
+                    li
+                        if displayPage.name == page.name
+                            a.line.active(href="/translations/#{displayPage.name}")
+                                i.icon-ok
+                                | #{displayPage.name}
+                        else
+                            a.line(href="/translations/#{displayPage.name}")
+                                i.icon-ok
+                                | #{displayPage.name}
+    section.group.collapsed
+        h2.group-header
+            a(href="#toolbox-elements") Elements
+        nav#toolbox-elements.group-content
+            ul.element-selector.menu
+                each pageElement in pageElements
+                    li
+                        a.element.line(href="##{pageElement.uid}", data-id="#{pageElement._id}")
+                            i.icon-ok
+                            | #{pageElement.element.name} &lsquo;#{pageElement.uid}&rsquo;

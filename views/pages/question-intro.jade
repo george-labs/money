@@ -1,0 +1,15 @@
+extends /page
+
+block content
+    .question-intro(role='main')
+        .progress.note.invert #{page.name.split('-')[1]}/8
+
+        .instruction
+            h2.caption.emphasis
+                - var pageElement = pageElements['title']
+                include /elements/element
+            - var pageElement = pageElements['lead-in']
+            include /elements/element
+
+        .continue
+            a.ir(href=nextPage.name) &#8594;

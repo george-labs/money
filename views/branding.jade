@@ -1,0 +1,27 @@
+extends layout
+
+block cms-editing
+    - var chiefeditor = user.role === 'chiefeditor'
+
+    section.cms.section.toolbox.ci.wysiwyg
+        h1.print Toolbox
+        section.group
+            h2.group-header
+                a(href='#toolbox-properties') Properties
+            #toolbox-properties.group-content.inset
+                each branding in brandings
+                    if branding.inputType == 'file'
+                        form.item.branding(action='/branding/save', method='POST', target='#{branding.name}IFrame', enctype='multipart/form-data')
+                            input.readonly.hidden(type='hidden', name='name', value='#{branding.name}')
+                            label.cover(for='#{branding.name}') #{branding.label}
+                            input.editable.upload(type='#{branding.inputType}', id='#{branding.name}', disabled=chiefeditor, name='value')
+                            .preview
+                                img(src='#{branding.value}')
+                            iframe(id='#{branding.name}Iframe', name='#{branding.name}Iframe', style='display:none')
+                    else
+                        .item.branding
+                            label.cover(for='#{branding.name}') #{branding.label}
+                            if branding.inputType == 'textarea'
+                                textarea.editable.autosave.multiline(id='#{branding.name}', disabled=chiefeditor, name='#{branding.name}') #{branding.value}
+                            else
+                                input.editable.autosave(type='#{branding.inputType}', id='#{branding.name}', disabled=chiefeditor, name='#{branding.name}', value='#{branding.value}')

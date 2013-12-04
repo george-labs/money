@@ -1,0 +1,27 @@
+.page-element(data-id='#{pageElement._id}')
+
+    section.group
+        h2.group-header
+            a(href='#toolbox-properties') Translation
+        #toolbox-properties.group-content.inset
+            each pageElementProperty in pageElement.getSortedPageElementProperties()
+                if pageElementProperty.property.inputType != 'hidden'
+                    - var readonly = user.role === 'chiefeditor'
+                    - var multiline = pageElementProperty.property.inputType === 'textarea'
+                    - var showOriginal = rootVersion && pageElementProperty.property.name === 'Text'
+                    - var classNames = ['item', 'page-element-property']
+                    if showOriginal
+                        - classNames.push('show-original')
+                    div(class=classNames)
+                        label.cover= pageElementProperty.property.name
+                        if showOriginal
+                            - classNames = multiline ? ['original', 'readonly', 'multiline'] : ['original', 'readonly']
+                            div(class=classNames) !{rootVersion.getProperty(pageElementProperty.property.name).value.replace(/\n/g,'<br/>')}
+                        - classNames = readonly ? ['readonly'] : ['editable', 'autosave']
+                        if multiline
+                            - classNames.push('multiline')
+                            textarea(class=classNames, data-id='#{pageElementProperty._id}', name=pageElementProperty.property.name, disabled=readonly)= pageElementProperty.value
+                        else
+                            input(class=classNames, data-id='#{pageElementProperty._id}', type=pageElementProperty.property.inputType, name=pageElementProperty.property.name, value=pageElementProperty.value, disabled=readonly)
+
+    include pageElementVersions

@@ -1,0 +1,19 @@
+- var cmsItemID = isAdmin ? '' + pageElement._id : undefined;
+- var parsedText = pageElement.getProperty('Text'); parsedText = parsedText ? parsedText.value.replace(/\n/g,'<br/>') : '';
+- var sizeAdjust = pageElement.getProperty('Zoom'); sizeAdjust = sizeAdjust ? sizeAdjust.value * 16 : 16;
+if pageElement.element.name == 'Text'
+    include text
+else if pageElement.element.name == 'Paragraph'
+    include paragraph
+else if pageElement.element.name == 'Link'
+    include link
+else if pageElement.element.name == 'Placable image'
+    include placable-image
+else if pageElement.element.name == 'Rotatable text'
+    include rotatable-text
+else if pageElement.element.name == 'Placable text'
+    include placable-text
+else if pageElement.element.name == 'Heading'
+    include heading
+else if pageElement.element.name == 'Section'
+    include heading-section

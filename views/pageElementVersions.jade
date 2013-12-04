@@ -1,0 +1,25 @@
+if user.role === 'editor'
+    section.group
+        h2.group-header
+            a(href="#version-elements") History
+        #version-elements.group-content
+            .inset.align-center
+                button.action.newVersion Create new version
+            ul.version.selector.menu.semantic
+                each item, i in versions
+                    - var number = versions.length - 1 - i;
+                    li.version-item(data-id="#{item._id}")
+                        - var classNames = ['restore-version', 'line']
+                        a(class='#{classNames.join(" ")}', href='##{pageElement.uid}-restore-version-#{number}')
+                            i.icon-time
+                            - var dateValue = item.createdAt.getFullYear() + '-' + ('0' + (item.createdAt.getMonth() + 1)).slice(-2) + '-' + ('0' + item.createdAt.getDate()).slice(-2);
+                            - var timeValue = ('0' + item.createdAt.getHours()).slice(-2) + ':' + ('0' + item.createdAt.getMinutes()).slice(-2) + ':' + ('0' + item.createdAt.getSeconds()).slice(-2);
+                            - var machina = dateValue.replace(/\-/g, '') + 'T' + timeValue.replace(/\:/g, '');
+                            data(value=machina)
+                                if number === 0
+                                    | Original version
+                                else
+                                    | #{dateValue} #{timeValue}
+                        if number !== 0
+                            a.additional-action.remove(href='##{pageElement.uid}-delete-version-#{number}')
+                                span.icon-trash

@@ -1,0 +1,2911 @@
+{
+    "pages": [
+        {
+            "name": "sitemap",
+            "template": "pages/sitemap",
+            "elements": [
+                {
+                    "name": "Text",
+                    "uid": "header",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Sitemap"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "tagline",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Your financial health check!"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "navigation-home",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Home"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "navigation-about",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "About"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "navigation-imprint",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Imprint"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "navigation-disclaimer",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Disclaimer"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "note-outdated",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "We’re sorry, you are using an outdated browser that is not capable of running this website."
+                        }
+                    ]
+                },
+                {
+                    "name": "Link",
+                    "uid": "note-outdated-link",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Please upgrade your browser to improve your experience. →"
+                        },
+                        {
+                            "name": "URL",
+                            "value": "http://browsehappy.com/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "about",
+            "template": "pages/about",
+            "elements": [
+                {
+                    "name": "Text",
+                    "uid": "header",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "About"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "header-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "An initial core group of the European members of WSBI (World Savings Banks Institute) and ESBG (European Savings and Retail Banking Group) have decided to join forces and launch a coordinated Financial Health Initiative (FHI) under the auspices of WSBI-ESBG."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "header-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "The cornerstone of the FHI is an innovative and holistic approach to giving advice based on the customer’s assessment of his or her financial health. The vision is to ensure that maintaining financial health becomes a way of life among the many, underpinned by such values as fairness, access and transparency. The FHI builds on the wide range of financial education and financial inclusion programmes carried out by WSBI-ESBG members."
+                        }
+                    ]
+                },
+                {
+                    "name": "Heading",
+                    "uid": "definition",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Definition"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "definition-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Financial health can be defined as well-being in all matters financial. It means being in a good financial position now and being on track, via financial planning and personal risk coverage, to maintain it in the future – for financial health, like physical health, can be and almost always is influenced by external or unanticipated events."
+                        }
+                    ]
+                },
+                {
+                    "name": "Heading",
+                    "uid": "relevance",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Relevance to customers and the general public"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "relevance-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "In order to support this vision, WSBI-ESBG member organisations are implementing the structure and activities necessary to:"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "relevance-1-list-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "raise awareness amongst WSBI-ESBG member bank customers and the general public of the importance of financial health and making financial decisions in an educated manner;"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "relevance-1-list-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "encourage member bank customers and the general public to assess their financial health regularly, with tools that are made available by their bank;"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "relevance-1-list-3",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "encourage member bank customers to make an appointment with a client adviser to analyse the results of the financial health assessment and to receive appropriate advice on ways and means to build up and maintain an optimal level of financial health."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "relevance-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "The FHI is an ambitious and long-term project, which will not necessarily be carried out in exactly the same way by all participating member organisations. It is, however, based on a common concept that has been elaborated and endorsed within WSBI-ESBG and members will use the same financial health assessment tool. This tool, which is called MONEY, has been designed specifically for the FHI, based on specifications elaborated by a WSBI-ESBG working group, and has been developed within Erste Group’s Digital Innovation Unit “BeeOne”."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "relevance-3",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "WSBI-ESBG represent the global and European voice of savings and retail banks. All WSBI- ESBG members respect the 3R principles of being retail-oriented, regionally-focused and responsible members of their communities. Further information on WSBI-ESBG can be accessed on the website below:"
+                        }
+                    ]
+                },
+                {
+                    "name": "Link",
+                    "uid": "relevance-3-list-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "World Savings Banks Institute"
+                        },
+                        {
+                            "name": "URL",
+                            "value": "http://www.savings-banks.com/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "imprint",
+            "template": "pages/imprint",
+            "elements": [
+                {
+                    "name": "Text",
+                    "uid": "header",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Imprint"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "imprint-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "{company}\n{address and stuff}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "imprint-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "{even more stuff}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Heading",
+                    "uid": "imprint-3-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Publisher"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "imprint-3-text",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "{company}\n{people}\n{copyright}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Heading",
+                    "uid": "imprint-4-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Design & Implementation"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "imprint-4-text",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Crafted with care by www.beeone.at in Austria."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "disclaimer",
+            "template": "pages/disclaimer",
+            "elements": [
+                {
+                    "name": "Text",
+                    "uid": "header",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Disclaimer"
+                        }
+                    ]
+                },
+                {
+                    "name": "Heading",
+                    "uid": "disclaimer-1-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "General"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "disclaimer-1-text",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "{terms and conditions and other stuff that does not fit in the sections below}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Heading",
+                    "uid": "disclaimer-2-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Basic tendency of the content"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "disclaimer-2-text",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Detailed information can be found in our About section."
+                        }
+                    ]
+                },
+                {
+                    "name": "Heading",
+                    "uid": "disclaimer-3-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Legal notice"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "disclaimer-3-text",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "{company} has endeavoured all reasonable measures to assure that all supplied information on this website is complete and correct at the time of display. Even so unintended and accidental errors may happen, for which we apologize."
+                        }
+                    ]
+                },
+
+                {
+                    "name": "Heading",
+                    "uid": "disclaimer-4-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Modifications"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "disclaimer-4-text",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "{company} reserves the right to make modifications and supplementals to the supplied information without prior notice."
+                        }
+                    ]
+                },
+                {
+                    "name": "Heading",
+                    "uid": "disclaimer-5-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Links"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "disclaimer-5-text",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "{company} does neither verify the content nor the legality of other websites it links to. {company} has no influence on the design of these websites and dissociates itself explicitly from the displayed, possibly unlawful content. Furthermore {company} takes no responsibility for such content and is not liable."
+                        }
+                    ]
+                },
+                {
+                    "name": "Heading",
+                    "uid": "disclaimer-6-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Data Protection"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "disclaimer-6-text",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Any personal data is dealt by us in accordance with the {legal thing of country}."
+                        }
+                    ]
+                },
+                {
+                    "name": "Heading",
+                    "uid": "disclaimer-7-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Cookies"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "disclaimer-7-text",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "You are hereby informed that a cookie may be automatically installed on your web browser and temporarily saved on your hard drive when you visit this website. The cookie does not serve to identify a particular Internet user, but rather to record information regarding his or her navigation of this website."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "error",
+            "template": "pages/error",
+            "elements": [
+                {
+                    "name": "Text",
+                    "uid": "header",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "We are sorry"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "error-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Oh noooo!"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "error-text",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Something went wrong. This is really embarrasing and should not happen."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "error-link",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Try again"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "welcome",
+            "template": "pages/welcome",
+            "elements": [
+                {
+                    "name": "Paragraph",
+                    "uid": "tagline",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Your financial health check"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "note-orientation",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "This site has been optimized for landscape use. Please rotate your device."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "note-screensize",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "This site has been optimized for bigger screens. You might find it difficult to interact with it."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "note-cookies",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "This site uses cookies to better facilitate your experience. By continuing to use this website, you consent to our use of these cookies."
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "name": "get-ready",
+            "template": "pages/get-ready",
+            "elements": [
+                {
+                    "name": "Paragraph",
+                    "uid": "introduction",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Find out how you and your money get along!"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "start",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Start"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "question-1-intro",
+            "template": "pages/question-intro",
+            "elements": [
+                {
+                    "name": "Text",
+                    "uid": "title",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Dirt cheap or a bit steep"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "lead-in",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "How are you at assessing value for money on products and services.\nAre you out of touch or do you know how much a carton of milk costs?"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "question-1",
+            "template": "pages/question-1",
+            "elements": [
+                {
+                    "name": "Paragraph",
+                    "uid": "instruction",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "What is the average price of each of these products?\nDrag the correct price label onto the product."
+                        }
+                    ]
+                },
+                {
+                    "name": "Placable text",
+                    "uid": "product-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "0.5l bottle of Coke from the supermarket"
+                        },
+                        {
+                            "name": "Width",
+                            "value": 200
+                        },
+                        {
+                            "name": "Offset X",
+                            "value": 144
+                        },
+                        {
+                            "name": "Offset Y",
+                            "value": 48
+                        },
+                        {
+                            "name": "Zoom",
+                            "value": 2
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-1-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 0.45"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-1-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 0.89"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-1-3-correct",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 1.15"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-1-4",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 1.99"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-1-5",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 2.99"
+                        }
+                    ]
+                },
+                {
+                    "name": "Placable text",
+                    "uid": "product-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "1 litre\nof milk"
+                        },
+                        {
+                            "name": "Width",
+                            "value": 160
+                        },
+                        {
+                            "name": "Offset X",
+                            "value": 200
+                        },
+                        {
+                            "name": "Offset Y",
+                            "value": 50
+                        },
+                        {
+                            "name": "Zoom",
+                            "value": 2
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-2-1-correct",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 1.00"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-2-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 1.99"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-2-3",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 2.50"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-2-4",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 3.50"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-2-5",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 8.99"
+                        }
+                    ]
+                },
+                {
+                    "name": "Placable text",
+                    "uid": "product-3",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "1 litre\nof diesel"
+                        },
+                        {
+                            "name": "Width",
+                            "value": 192
+                        },
+                        {
+                            "name": "Offset X",
+                            "value": 80
+                        },
+                        {
+                            "name": "Offset Y",
+                            "value": 12
+                        },
+                        {
+                            "name": "Zoom",
+                            "value": 2
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-3-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 0.76"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-3-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 0.98"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-3-3",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 1.09"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-3-4",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 1.21"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-3-5-correct",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 1.35"
+                        }
+                    ]
+                },
+                {
+                    "name": "Placable text",
+                    "uid": "product-4",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "1 hour of labour for a plumber"
+                        },
+                        {
+                            "name": "Width",
+                            "value": 160
+                        },
+                        {
+                            "name": "Offset X",
+                            "value": 192
+                        },
+                        {
+                            "name": "Offset Y",
+                            "value": 32
+                        },
+                        {
+                            "name": "Zoom",
+                            "value": 2
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-4-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 35"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-4-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 50"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-4-3-correct",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 70"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-4-4",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 150"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-4-5",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 170"
+                        }
+                    ]
+                },
+                {
+                    "name": "Placable text",
+                    "uid": "product-5",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "1 Big Mac"
+                        },
+                        {
+                            "name": "Width",
+                            "value": 192
+                        },
+                        {
+                            "name": "Offset X",
+                            "value": 144
+                        },
+                        {
+                            "name": "Offset Y",
+                            "value": 48
+                        },
+                        {
+                            "name": "Zoom",
+                            "value": 2
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-5-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 1.00"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-5-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 2.49"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-5-3-correct",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 3.60"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-5-4",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 3.99"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-5-5",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 4.50"
+                        }
+                    ]
+                },
+                {
+                    "name": "Placable text",
+                    "uid": "product-6",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "1 cinema ticket"
+                        },
+                        {
+                            "name": "Width",
+                            "value": 224
+                        },
+                        {
+                            "name": "Offset X",
+                            "value": 128
+                        },
+                        {
+                            "name": "Offset Y",
+                            "value": 48
+                        },
+                        {
+                            "name": "Zoom",
+                            "value": 2
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-6-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 7.40"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-6-2-correct",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 9.20"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-6-3",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 10.50"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-6-4",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 12.50"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "price-6-5",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "€ 15.00"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "done",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Done"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "question-2-intro",
+            "template": "pages/question-intro",
+            "elements": [
+                {
+                    "name": "Text",
+                    "uid": "title",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Saving for a rainy day"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "lead-in",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Do you keep it in a savings account or is it all under the mattress?\nHow do you save your money?"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "question-2",
+            "template": "pages/question-2",
+            "elements": [
+                {
+                    "name": "Paragraph",
+                    "uid": "instruction",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Look at these questions and pick the answer that best suits you."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "approach-1-question",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "You save €100 every month. What would you rather do with the money?"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "approach-1-option-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Put it in my piggy bank."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "approach-1-option-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Transfer it into a savings account."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "approach-1-option-3",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Invest in emerging market stocks."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "approach-1-option-4",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Give it to my loved ones."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "approach-1-option-5",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Invest in a mutual fund."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "approach-2-question",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "You inherit €5,000 from your aunt. What would you do with the cash?"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "approach-2-option-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Buy gold."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "approach-2-option-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Buy federal bonds."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "approach-2-option-3",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Leave it under the mattress."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "approach-2-option-4",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Put it into a savings account."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "approach-2-option-5",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Pack your bags and go on a weekend-trip to think about it."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "approach-3-question",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "A business you invested in was sold last week. Your stake was valued at €800,000. What would you do with it?"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "approach-3-option-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Put it into a savings account."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "approach-3-option-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Invest in the stock market."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "approach-3-option-3",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Buy bonds."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "approach-3-option-4",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Invest in the business of a guy you met in a bar."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "approach-3-option-5",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Open the restaurant that you have always dreamed about."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "done",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Done"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "question-3-intro",
+            "template": "pages/question-intro",
+            "elements": [
+                {
+                    "name": "Text",
+                    "uid": "title",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Keeping an eye on your cash"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "lead-in",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Are you always in the red? Up to your eyeballs in debt?\nAre you really in control of your expenses?"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "question-3",
+            "template": "pages/question-3",
+            "elements": [
+                {
+                    "name": "Paragraph",
+                    "uid": "instruction",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Read the notes and tap the stamp that best suits you."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "stampable-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "You know how much money you have in your account at all times."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "stampable-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "You have a savings account, a current account and a secret place at home where you stash some cash."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "stampable-3",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "You always know exactly how much cash you are carrying in your wallet."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "does-apply",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "So me"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "does-not-apply",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "So not me"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "done",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Done"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "question-4-intro",
+            "template": "pages/question-intro",
+            "elements": [
+                {
+                    "name": "Text",
+                    "uid": "title",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Dealing with money"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "lead-in",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Maybe you know that you can handle all that life throws at you.\nHowever, do you know how to handle money? Your money?"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "question-4",
+            "template": "pages/question-4",
+            "elements": [
+                {
+                    "name": "Paragraph",
+                    "uid": "instruction",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Does the text on the card describe your relationship with money?\nPut it on the correct stack."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "card-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "I don’t really care about money."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "card-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "I think long and hard before I spend my money."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "card-3",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "I check my balance at least once a week."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "card-4",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Dealing with money frightens me."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "card-5",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Money calms me down."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "card-6",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "I don’t trust anyone with my money."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "card-7",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Dealing with money numbs me."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "card-8",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "I am well informed about money matters."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "card-9",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "When it comes to money, you can never be too careful."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "card-10",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "My dealings with money are rather aimless."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "does-apply",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Me"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "does-not-apply",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Not\nme"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "done",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Done"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "question-5-intro",
+            "template": "pages/question-intro",
+            "elements": [
+                {
+                    "name": "Text",
+                    "uid": "title",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Nothing ventured, nothing gained"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "lead-in",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Are you up for making investments? Do you speculate to accumulate?"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "question-5",
+            "template": "pages/question-5",
+            "elements": [
+                {
+                    "name": "Paragraph",
+                    "uid": "instruction",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Touch your friends and read what they have to say.\nThen decide whose advice to take."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "question",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "All of a sudden you have €5,000 available. At the moment your current account is overdrawn by €3,000 because you had an unplanned expense recently – you smashed up your car. You need some advice."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "advice-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Put the €5,000 in your current account and play it safe."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "advice-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Split the €5,000 in two and invest both amounts, €2,500 into less volatile investments and €2,500 into a startup-fund which could earn you some real money within the next couple of years."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "advice-3",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Use €3,000 to pay for a weekend trip to Paris as a treat for your partner’s birthday and put the rest (€2,000) into your current account."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "advice-4",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Put €4,000 into your current account and invest the rest (€1,000) in stocks."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "advice-5",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Put €3,000 into your current account to sort things out. The rest (€2,000) goes into the money box you labeled \"car repairs\"."
+                        }
+                    ]
+                } ,
+                {
+                    "name": "Text",
+                    "uid": "done",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Done"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "question-6-intro",
+            "template": "pages/question-intro",
+            "elements": [
+                {
+                    "name": "Text",
+                    "uid": "title",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Russian Roulette"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "lead-in",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "What is your attitude to risk? Do you like to gamble or play it safe?"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "question-6",
+            "template": "pages/question-6",
+            "elements": [
+                {
+                    "name": "Paragraph",
+                    "uid": "instruction",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Are these statements true or false for you?\nMove the arrow accordingly."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "statement-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "I would never ask a stranger to dance with me, even if I found them attractive."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "statement-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "I never use a helmet whilst skiing or cycling."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "statement-3",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "I don’t have a problem with exposing my data on the Internet."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "statement-4",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "I enjoy exotic food and love ordering dishes that surprise me."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "statement-5",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "I would never give up my full time job for a temporary one, even if I could earn much more money."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "statement-6",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "In a restaurant, I only ever order dishes that I know."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "statement-7",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "For an exciting holiday I would even consider travelling to a country that carries a travel warning."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "statement-8",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "I mostly start my holidays without booking anything or making an itinerary."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "statement-9",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "At sport, I always enjoy pushing myself to the limit."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "statement-10",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "When grocery shopping, I try very hard to find the product with the longest expiry date."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "does-apply",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "True"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "does-not-apply",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "False"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "done",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Done"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "question-7-intro",
+            "template": "pages/question-intro",
+            "elements": [
+                {
+                    "name": "Text",
+                    "uid": "title",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "The golden years"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "lead-in",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Do you think about life after work?\nHow do you provide for your future? "
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "question-7",
+            "template": "pages/question-7",
+            "elements": [
+                {
+                    "name": "Paragraph",
+                    "uid": "instruction",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Pick up, read all the post-its and keep the one you like best.\nThrow the rest in the bin."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "question",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "You have €46,247 at hand. Thinking about your future, what would your personal priority list look like?"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "list-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Pay back all your debts.\nStore some of the money in a safe place in your house.\nBuy a small piece of land to grow your own potatoes."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "list-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Only pay back your debts that have the worst conditions attached to them.\nPut 30% of the money into blue chips on the stock market.\nPut the rest into your savings account."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "list-3",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Invest €20,000 in the exciting startup that your friend told you about.\nPut €5,000 in a high-risk fund that generated you a good return in the past.\nBook that paragliding holiday you always wished you could afford."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "list-4",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Invite all your best friends for a slap up dinner.\nBook a round-the-world-trip. \nLeave the rest in your current account."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "list-5",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Make a priority list and check the current conditions of all your accounts before you take a decision.\nPut €800 on the side so you can pay for that boiler that needs to be replaced.\nPut the rest into your savings account."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "done",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Done"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "question-8-intro",
+            "template": "pages/question-intro",
+            "elements": [
+                {
+                    "name": "Text",
+                    "uid": "title",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Covered or uncovered"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "lead-in",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Your close friends think you are great at dealing with money.\nNow they want some advice from you."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "question-8",
+            "template": "pages/question-8",
+            "elements": [
+                {
+                    "name": "Paragraph",
+                    "uid": "instruction",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Use the red button to turn the pie chart to the option that you think is best."
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "question",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Your friend has a decent amount of money and asks you how to invest it."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "share-1",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Real Estate investment"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "share-2",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Stocks"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "share-3",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Savings account"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "share-4",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Building savings contract"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "share-5",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Saving your money at home"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "next",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Approve & Finish"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "calculation",
+            "template": "pages/calculation",
+            "elements": [
+                {
+                    "name": "Paragraph",
+                    "uid": "instruction",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "You are done!"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "calculation",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Calculating\nyour profile"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "discover",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Discover"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_comment": "//Personas 1 to 5",
+            "name": "result",
+            "template": "pages/result",
+            "elements": [
+                {
+                    "name": "Text",
+                    "uid": "header",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "You are…"
+                        }
+                    ]
+                },
+                {
+                    "name": "Section",
+                    "uid": "action-rubric",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "What’s next?"
+                        }
+                    ]
+                },
+                {
+                    "name": "Section",
+                    "uid": "compare-rubric",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "You are not alone!"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "compare-description",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "of people taking this test are like you."
+                        }
+                    ]
+                },
+                {
+                    "name": "Section",
+                    "uid": "share-rubric",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Share this test"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "share-facebook",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Share on facebook"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "share-twitter",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Share on twitter"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "share-googleplus",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Share on google+"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "start-again",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Play again"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-1-tagline",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "The Super-hero — busy and pragmatic"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "persona-1-description",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "You’re not really that interested in your money, life is way too short. Having said that, you do care about your regular income and would definitely not risk a penny in a casino. You simply don’t have time to be bothered with loads of financial information, you have enough to do in your daily life. You’re running around on full gas fixing things and making sure that life runs smoothly for yourself and those around you. They call you Mr. Nice Guy or Mrs. Nice Girl, you’re everyone’s guardian angel! WOAH! Just slow down a second. We all need a super-hero from time to time and that includes you. You could probably do with your very own “Cashman” to fly down and rescue your finances."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-1-action-1-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Quick tip"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-1-action-1-body",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Do you want to learn more on how to keep track of your expenses? Our website can tell you more about this."
+                        }
+                    ]
+                },
+                {
+                    "name": "Link",
+                    "uid": "persona-1-action-1-link",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Go to article →"
+                        },
+                        {
+                            "name": "URL",
+                            "value": "http://example.com/quick-tip"
+                        },
+                        {
+                            "name": "Redirect",
+                            "value": "/forward?url={url}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-1-action-2-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Special offer"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-1-action-2-body",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Based on your test result, we have a product that might be of interest to you."
+                        }
+                    ]
+                },
+                {
+                    "name": "Link",
+                    "uid": "persona-1-action-2-link",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Find out more →"
+                        },
+                        {
+                            "name": "URL",
+                            "value": "http://example.com/special-offer"
+                        },
+                        {
+                            "name": "Redirect",
+                            "value": "/forward?url={url}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-1-action-3-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Talk to us"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-1-action-3-body",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "This little test can only do so much. To find the perfect product that meets your current needs, how about talking with one of our advisors? They’re really nice and know lots about money and stuff."
+                        }
+                    ]
+                },
+                {
+                    "name": "Link",
+                    "uid": "persona-1-action-3-link",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Make an appointment →"
+                        },
+                        {
+                            "name": "URL",
+                            "value": "http://example.com/appointment"
+                        },
+                        {
+                            "name": "Redirect",
+                            "value": "/forward?url={url}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-2-tagline",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "The Nonbeliever — anxious and modest"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "persona-2-description",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Pessimism is your middle name, your glass is always half empty! You believe that all banks come from the depths of hell and financial advisors are vampires whose only interest is in bleeding you dry. You’re way too nervous to let all those monetary whizz-kids loose with your lolly! You know enough about money matters; however, you don’t really apply your financial know-how. If you could keep all your cash under your mattress you would, but you know that bank accounts are a necessary evil. Hey, come on relax, if you don’t start to show a little trust you’re going to be your own worst enemy."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-2-action-1-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Quick tip"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-2-action-1-body",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Do you want to learn more on how to keep track of your expenses? Our website can tell you more about this."
+                        }
+                    ]
+                },
+                {
+                    "name": "Link",
+                    "uid": "persona-2-action-1-link",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Go to article →"
+                        },
+                        {
+                            "name": "URL",
+                            "value": "http://example.com/quick-tip"
+                        },
+                        {
+                            "name": "Redirect",
+                            "value": "/forward?url={url}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-2-action-2-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Special offer"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-2-action-2-body",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Based on your test result, we have a product that might be of interest to you."
+                        }
+                    ]
+                },
+                {
+                    "name": "Link",
+                    "uid": "persona-2-action-2-link",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Find out more →"
+                        },
+                        {
+                            "name": "URL",
+                            "value": "http://example.com/special-offer"
+                        },
+                        {
+                            "name": "Redirect",
+                            "value": "/forward?url={url}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-2-action-3-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Talk to us"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-2-action-3-body",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "This little test can only do so much. To find the perfect product that meets your current needs, how about talking with one of our advisors? They’re really nice and know lots about money and stuff."
+                        }
+                    ]
+                },
+                {
+                    "name": "Link",
+                    "uid": "persona-2-action-3-link",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Make an appointment →"
+                        },
+                        {
+                            "name": "URL",
+                            "value": "http://example.com/appointment"
+                        },
+                        {
+                            "name": "Redirect",
+                            "value": "/forward?url={url}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-3-tagline",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "The Jolly Joker — carefree and positive"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "persona-3-description",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "You don’t need money to be happy and you have a positive and open attitude towards life but no time or interest to inform yourself about money matters. You’re too busy having fun spending your cash and if you spend money that you don’t have, who cares. Why drink beer when you can have Champagne? People who can give you advice about money are not the kind of people you want to hang out with, but you still trust them to get you a good deal. You want your money to work for you but you are too busy and too cool to really get involved. Just hang on a minute, you could actually spare a little time to get some good advice couldn’t you? You can always go to the pub afterwards!"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-3-action-1-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Quick tip"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-3-action-1-body",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Do you want to learn more on how to keep track of your expenses? Our website can tell you more about this."
+                        }
+                    ]
+                },
+                {
+                    "name": "Link",
+                    "uid": "persona-3-action-1-link",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Go to article →"
+                        },
+                        {
+                            "name": "URL",
+                            "value": "http://example.com/quick-tip"
+                        },
+                        {
+                            "name": "Redirect",
+                            "value": "/forward?url={url}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-3-action-2-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Special offer"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-3-action-2-body",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Based on your test result, we have a product that might be of interest to you."
+                        }
+                    ]
+                },
+                {
+                    "name": "Link",
+                    "uid": "persona-3-action-2-link",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Find out more →"
+                        },
+                        {
+                            "name": "URL",
+                            "value": "http://example.com/special-offer"
+                        },
+                        {
+                            "name": "Redirect",
+                            "value": "/forward?url={url}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-3-action-3-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Talk to us"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-3-action-3-body",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "This little test can only do so much. To find the perfect product that meets your current needs, how about talking with one of our advisors? They’re really nice and know lots about money and stuff."
+                        }
+                    ]
+                },
+                {
+                    "name": "Link",
+                    "uid": "persona-3-action-3-link",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Make an appointment →"
+                        },
+                        {
+                            "name": "URL",
+                            "value": "http://example.com/appointment"
+                        },
+                        {
+                            "name": "Redirect",
+                            "value": "/forward?url={url}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-4-tagline",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "The Smart Cookie — involved and ambitious"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "persona-4-description",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "You are one cool dude! You’re interested, well-informed and you take care of your cash. Finance is fun! You know that if you want to get the deal of a lifetime you have to be clued up and have your head screwed on. You’re great with money, you’re great with people, you’re great with business, in fact you’re just, well, GREAT! Hold on a minute. Are you really that great? Have you got the best deal? Is your money working as hard for you as you work for your money? Maybe, just maybe you could do with a bit of extra help."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-4-action-1-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Quick tip"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-4-action-1-body",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Do you want to learn more on how to keep track of your expenses? Our website can tell you more about this."
+                        }
+                    ]
+                },
+                {
+                    "name": "Link",
+                    "uid": "persona-4-action-1-link",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Go to article →"
+                        },
+                        {
+                            "name": "URL",
+                            "value": "http://example.com/quick-tip"
+                        },
+                        {
+                            "name": "Redirect",
+                            "value": "/forward?url={url}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-4-action-2-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Special offer"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-4-action-2-body",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Based on your test result, we have a product that might be of interest to you."
+                        }
+                    ]
+                },
+                {
+                    "name": "Link",
+                    "uid": "persona-4-action-2-link",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Find out more →"
+                        },
+                        {
+                            "name": "URL",
+                            "value": "http://example.com/special-offer"
+                        },
+                        {
+                            "name": "Redirect",
+                            "value": "/forward?url={url}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-4-action-3-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Talk to us"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-4-action-3-body",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "This little test can only do so much. To find the perfect product that meets your current needs, how about talking with one of our advisors? They’re really nice and know lots about money and stuff."
+                        }
+                    ]
+                },
+                {
+                    "name": "Link",
+                    "uid": "persona-4-action-3-link",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Make an appointment →"
+                        },
+                        {
+                            "name": "URL",
+                            "value": "http://example.com/appointment"
+                        },
+                        {
+                            "name": "Redirect",
+                            "value": "/forward?url={url}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-5-tagline",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "The Bean Counter — secure and controlled"
+                        }
+                    ]
+                },
+                {
+                    "name": "Paragraph",
+                    "uid": "persona-5-description",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Your friends call you “The control freak money geek”, but you couldn’t care less about what they think. You know what’s going on in your accounts and you are most definitely not flash with your cash! So what if you use your mobile more as a calculator than a phone - you know this because you’re constantly checking your phone bills! For you money is a means to an end so you keep it tight, really tight. Rather than focusing on profit, you are concerned with security and you’re not going to let anyone mess you about. You’re very well informed but could maybe do with a bit of help from someone you trust. If you’re honest with yourself all this financial fretting is exhausting and you would really love to chill out, well a just little bit at least."
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-5-action-1-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Quick tip"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-5-action-1-body",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Do you want to learn more on how to keep track of your expenses? Our website can tell you more about this."
+                        }
+                    ]
+                },
+                {
+                    "name": "Link",
+                    "uid": "persona-5-action-1-link",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Go to article →"
+                        },
+                        {
+                            "name": "URL",
+                            "value": "http://example.com/quick-tip"
+                        },
+                        {
+                            "name": "Redirect",
+                            "value": "/forward?url={url}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-5-action-2-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Special offer"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-5-action-2-body",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Based on your test result, we have a product that might be of interest to you."
+                        }
+                    ]
+                },
+                {
+                    "name": "Link",
+                    "uid": "persona-5-action-2-link",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Find out more →"
+                        },
+                        {
+                            "name": "URL",
+                            "value": "http://example.com/special-offer"
+                        },
+                        {
+                            "name": "Redirect",
+                            "value": "/forward?url={url}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-5-action-3-label",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Talk to us"
+                        }
+                    ]
+                },
+                {
+                    "name": "Text",
+                    "uid": "persona-5-action-3-body",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "This little test can only do so much. To find the perfect product that meets your current needs, how about talking with one of our advisors? They’re really nice and know lots about money and stuff."
+                        }
+                    ]
+                },
+                {
+                    "name": "Link",
+                    "uid": "persona-5-action-3-link",
+                    "properties": [
+                        {
+                            "name": "Text",
+                            "value": "Make an appointment →"
+                        },
+                        {
+                            "name": "URL",
+                            "value": "http://example.com/appointment"
+                        },
+                        {
+                            "name": "Redirect",
+                            "value": "/forward?url={url}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

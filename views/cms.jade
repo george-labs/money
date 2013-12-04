@@ -1,0 +1,75 @@
+extends layout
+
+block cms-editing
+
+    section.cms.section.toolbox.general-information
+        h1.print Toolbox
+
+        section.group
+            h2.group-header
+                a(href='#toolbox-status') Overview
+            #toolbox-status.group-content.inset
+                .segment.user
+                    .item
+                        span.label.cover Logged in as
+                        span.readonly= user.username
+                    .actions
+                        button.action.change-password Change password
+
+                .segment.live
+                    .item
+                        span.label.cover Application is currently
+                        strong.readonly.emphasis= isReady ? 'online' : 'offline'
+                    if user.role === 'chiefeditor'
+                        .actions
+                            if !isReady
+                                button.action.toggle-live.online(data-request='{"url":"/admin/go-online","redirect":"/cms?live-@"}') Go online
+                            else
+                                button.action.toggle-live.offline(data-request='{"url":"/admin/go-offline","redirect":"/cms?live-@"}') Go offline
+                                button.action.toggle-live.update(data-request='{"url":"/admin/go-online","redirect":"/cms?live-@"}') Update
+
+        if (user.role === 'chiefeditor' && dbReset) || user.role === 'editor'
+            section.group
+                h2.group-header
+                    a(href='#toolbox-db') Local database
+                #toolbox-db.group-content
+                    .segment.reset
+                        .actions.inset
+                            span.label.cover Reset to factory settings
+                            if user.role === 'chiefeditor' && dbReset
+                                button.action.execute-reset(data-request='{"url":"/admin/reset-database","redirect":"/cms?reset-@","confirm":"Do you really want to reset the complete database (excluding statistics)?"}') Reset database
+                            if user.role === 'editor'
+                                if dbReset
+                                    span.pending.attention Request pending
+                                    button.action.abort-reset(data-request='{"url":"/admin/cancel-database-reset","redirect":"/cms"}') Cancel request
+                                else
+                                    button.action.request-reset(data-request='{"url":"/admin/request-database-reset","redirect":"/cms"}') Request reset
+                    if user.role !== 'chiefeditor'
+                        hr
+                        include appVersionList
+                        hr
+                        .actions.inset
+                            span.label.cover Create snapshot
+                            input#tagName.editable(placeholder='Enter name')
+                            button.action.create-app-version New snapshot
+
+        section.group.collapsed
+            h2.group-header
+                a(href='#toolbox-centraldb') Centralized database
+            #toolbox-centraldb.group-content.inset
+                .item.central-db-url
+                    span.label.cover Connection
+                    a.readonly.url(href='#{config.centralDatabaseUrl}?id=#{encodeURIComponent(config.id)}&country=#{config.country}', target='_blank')= config.centralDatabaseUrl
+                .item.central-db-last-sync
+                    span.label.cover Last synchronization
+                    data.readonly= config.centralDatabaseLastSync ? config.centralDatabaseLastSync.toUTCString() : '(unknown)'
+                .actions
+                    if user.role === 'chiefeditor'
+                        button.action.stats-synchronize(data-request='{"url":"/statistics/synchronize","confirm":"Do you really want to run the job manually?"}') Synchronize now
+                        // button.action.stats-integrate(data-request='{"url":"/statistics/integrate","confirm":"Do you really want to run the job manually?"}') Integrate expired sessions
+
+
+
+    section.cms.section.main
+        nav.sections.standalone
+            include main-navigation

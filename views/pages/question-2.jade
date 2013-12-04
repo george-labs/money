@@ -1,0 +1,29 @@
+extends /page
+
+block content
+    form.question.question-2.multi-step.freeze(role='main', id=page.name, method='POST', action=nextPage.name)
+        .progress.note.invert 2/8
+
+        .instruction
+            - var pageElement = pageElements['instruction']
+            include /elements/element
+
+        ol.semantic.puzzles.approaches
+            each approach in [1,2,3]
+                li.puzzle.approach.inactive
+                    .task.note.emphasis
+                        - var pageElement = pageElements['approach-' + approach + '-question']
+                        include /elements/element
+                    ul.semantic.choices.note.emphasis.invert
+                        each pageElement in page.getElements('approach-' + approach + '-option-')
+                            li.choice.selectable
+                                label
+                                    input.progress-tracker.hidden(type='radio', name='q2s#{approach}', value=pageElement.uid.split('-')[3])
+                                    include /elements/element
+
+        .continue.default.hidden.note.emphasis.invert
+            a.next.ir &#8594;
+            a.done(href=nextPage.name)
+                - var pageElement = pageElements['done']
+                include /elements/element
+            input.hidden(type='submit', name='q', value='2')

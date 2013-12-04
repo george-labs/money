@@ -1,0 +1,31 @@
+extends /page
+
+block content
+    .about.static.highlight(role='main', id=page.name)
+
+        h2.banner.note.emphasis.invert
+            - var pageElement = pageElements['header']
+            include /elements/element
+
+        each pageElement in page.getElements('header-')
+            include /elements/element
+
+        each pageElement in page.getElements('definition')
+            include /elements/element
+
+        - var pageElement = pageElements['relevance']
+        include /elements/element
+        - var pageElement = pageElements['relevance-1']
+        include /elements/element
+        ul.semantic.link-list.point-out
+            each pageElement in page.getElements('relevance-1-list-')
+                li
+                    include /elements/element
+        - var pageElement = pageElements['relevance-2']
+        include /elements/element
+        - var pageElement = pageElements['relevance-3']
+        include /elements/element
+        ul.semantic.link-list.point-out
+            each pageElement in page.getElements('relevance-3-list-')
+                li
+                    include /elements/element

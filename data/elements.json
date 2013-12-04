@@ -1,0 +1,78 @@
+{
+    "elements": [
+        {
+            "name": "Text",
+            "properties": ["Text"]
+        },
+        {
+            "name": "Paragraph",
+            "properties": ["Text"]
+        },
+        {
+            "name": "Link",
+            "properties": ["Text", "Title", "URL", "Redirect"]
+        },
+        {
+            "name": "Heading",
+            "properties": ["Text"]
+        },
+        {
+            "name": "Section",
+            "properties": ["Text"]
+        },
+        {
+            "name": "Rotatable text",
+            "properties": ["Text", "Rotate", "Offset X", "Offset Y", "Zoom"]
+        },
+        {
+            "name": "Placable text",
+            "properties": ["Text", "Width", "Offset X", "Offset Y", "Zoom"]
+        },
+        {
+            "name": "Placable image",
+            "properties": ["ImagePath", "Width", "Offset X", "Offset Y"]
+        }
+    ],
+    "properties": [
+        {
+            "name": "Text",
+            "inputType": "textarea"
+        },
+        {
+            "name": "Title",
+            "inputType": "text"
+        },
+        {
+            "name": "URL",
+            "inputType": "text"
+        },
+        {
+            "name": "Width",
+            "inputType": "text"
+        },
+        {
+            "name": "Rotate",
+            "inputType": "text"
+        },
+        {
+            "name": "Offset X",
+            "inputType": "text"
+        },
+        {
+            "name": "Offset Y",
+            "inputType": "text"
+        },
+        {
+            "name": "Zoom",
+            "inputType": "hidden"
+        },
+        {
+            "name": "ImagePath",
+            "inputType": "hidden"
+        },
+        {
+            "name": "Redirect",
+            "inputType": "hidden"
+        }
+    ]
+}

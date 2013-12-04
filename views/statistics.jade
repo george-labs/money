@@ -1,0 +1,128 @@
+extends layout
+
+block cms-editing
+
+    section.cms.section.main.statistics
+
+        .clearfix
+
+            table
+                thead
+                    tr
+                        th.label Progress
+                        th.number.percentage %
+                        th.number Total
+                tbody
+                    each item in stats.progress
+                        tr
+                            td.label= item.title
+                            td.number.percentage= item.rel
+                            td.number= item.total
+
+            table
+                thead
+                    tr
+                        th.label
+                            | Result types
+                            if stats.central
+                                |  (
+                                a.compare(href='#result-types-international') compare
+                                | )
+                        th.number.percentage %
+                        th.number Total
+                tbody
+                    each item in stats.result
+                        tr
+                            td.label= item.title
+                            td.number.percentage= item.rel
+                            td.number= item.total
+
+            table
+                thead
+                    tr
+                        th.label Click targets
+                        th.number Total
+                tbody
+                    each item in stats.click
+                        tr
+                            td.label= item.title
+                            td.number= item.total
+
+            table
+                thead
+                    tr
+                        th.label Not part of the statistic yet
+                        th.number Total
+                tbody
+                    tr
+                        td.label Currently active sessions
+                        td.number= stats.session.activeSessions
+
+        .cover
+
+            table
+                thead
+                    tr
+                        th.label TOP #{stats.referer.limit} referers
+                        th.number Total
+                tbody
+                    each item in stats.referer.top
+                        tr
+                            td.label.one-liner= item.value
+                            td.number= item.total
+
+            table
+                thead
+                    tr
+                        th.label TOP #{stats.userAgent.limit} user agents
+                        th.number Total
+                tbody
+                    each item in stats.userAgent.top
+                        tr
+                            td.label.one-liner= item.value
+                            td.number= item.total
+
+        if stats.central
+            hr(style='margin-top:8em;margin-bottom:4em')
+
+            h3 International comparison
+
+            .cover
+
+                table
+                    thead
+                        tr
+                            th(rowspan='2')
+                                a#result-types-international Result types
+                            each persona in stats.result
+                                td.align-center(colspan='2')= persona.title
+                        tr
+                            each persona in stats.result
+                                th.number.percentage %
+                                th.number Total
+                    tbody
+                        tr(title='This installation')
+                            th.label
+                                em local
+                            each persona in stats.result
+                                td.number.percentage= persona.rel
+                                td.number= persona.total
+                        tr.sum(title='All installations')
+                            th.label
+                                em all
+                            each persona in stats.central.result.persona
+                                td.number= persona.total
+                                td.number.percentage= persona.rel
+
+                        each country in stats.central.result.country
+                            tr(title='Installations in country #{country.title}')
+                                th.label= country.title
+                                each persona in country.persona
+                                    td.number= persona.total
+                                    td.number.percentage= persona.rel
+
+            .hint(style='margin-top:56px;margin-top:4rem')
+                if config.centralDatabaseLastSync
+                    |  International values have last been synchronized at #{config.centralDatabaseLastSync.toUTCString()}.
+                else
+                    |  International values are being synchronized nightly.

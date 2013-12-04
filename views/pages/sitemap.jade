@@ -1,0 +1,36 @@
+extends /page
+
+block content
+    .sitemap.static.highlight(role='main')
+
+        h2.banner.note.emphasis.invert
+            - var pageElement = pageElements['header']
+            include /elements/element
+
+        .lead-in.invert.emphasis
+            .title.caption= config.title
+            .tagline.note
+                - var pageElement = pageElements['tagline']
+                include /elements/element
+
+        ul.link-list.note.emphasis
+            li
+                a(href='/')
+                    - var pageElement = pageElements['navigation-home']
+                    include /elements/element
+            li
+                a(href='/about')
+                    - var pageElement = pageElements['navigation-about']
+                    include /elements/element
+            li
+                a(href='/imprint')
+                    - var pageElement = pageElements['navigation-imprint']
+                    include /elements/element
+            li
+                a(href='/disclaimer')
+                    - var pageElement = pageElements['navigation-disclaimer']
+                    include /elements/element
+
+append notifications
+    if isAdmin
+        include ../not-supported

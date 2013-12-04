@@ -1,0 +1,41 @@
+h1.table-of-contents.standalone-header.print Content Management Sections
+
+ul.table-of-contents.standalone-content.index
+    li.home
+        h2.title.caption
+            a(href='/cms', title='Home')
+                i.icon-home
+                span.app-name MONEY
+                | &nbsp;
+                abbr(title="Content Management System") CMS
+    if typeof user !== 'undefined'
+        li
+            h2.title
+                a(href='/metadata', title='Metadata')
+                    i.icon-cogs
+                    span.emphasis Metadata
+            p.description Adjust the metadata which is seen by search engines.
+        li
+            h2.title
+                a(href='/branding', title="Branding")
+                    i.icon-adjust
+                    span.emphasis Branding
+            p.description Upload your company logo and adjust colors to provide your corporate look and feel for your audience.
+        li
+            h2.title
+                a(href='/translations', title="Translations")
+                    i.icon-font
+                    span.emphasis Translations
+            p.description Translate all text found in the MONEY app to your required language.
+        li
+            h2.title
+                a(href='/statistics', title="Statistics")
+                    i.icon-bar-chart
+                    span.emphasis Statistics
+            p.description If you want to know more about the usage of the MONEY app, this is the place to go.
+        li.logout
+            h2.title
+                a(href='/logout', title="Logout")
+                    i.icon-off
+                    span.emphasis Logout
+            p.description Log out the current User.

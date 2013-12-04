@@ -1,0 +1,21 @@
+extends layout
+
+block cms-editing
+    - var chiefeditor = user.role === 'chiefeditor'
+    
+    section.cms.section.toolbox.settings
+        h1.print Toolbox
+        .group
+            h2.group-header
+                a(href='#toolbox-properties') Properties
+            #toolbox-properties.group-content.inset
+                each setting in settings
+                    .item.setting
+                        label.cover(for='#{setting.name}') #{setting.label}
+                        if setting.inputType == 'textarea'
+                            textarea.editable.autosave.multiline(id='#{setting.name}', disabled=chiefeditor, name='#{setting.name}') #{setting.value}
+                        else
+                            input.editable.autosave(type='#{setting.inputType}', disabled=chiefeditor, id='#{setting.name}', name='#{setting.name}', value='#{setting.value}')
+
+    section.cms.section
+        .hint No preview available

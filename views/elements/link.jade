@@ -1,0 +1,6 @@
+- var url = pageElement.getProperty('URL').value;
+- var title = pageElement.getProperty('Title'); title = title ? title.value : undefined;
+- var viaServer = pageElement.getProperty('Redirect'); viaServer = viaServer ? viaServer.value : undefined;
+- if (!isAdmin && config.ci.cid) { url = url.replace(/(?!\?)cid=[^?]*/, 'cid=' + config.ci.cid); }
+- if (viaServer) { url = viaServer.replace(/\{url\}/, encodeURIComponent(url)); }
+a.link.element(data-id=cmsItemID, title=title, href="#{url}") !{parsedText}

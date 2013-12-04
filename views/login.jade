@@ -1,0 +1,20 @@
+extends layout
+
+block cms-editing
+    section.cms.section.login
+        h1.print Login
+        section.standalone
+            h2.standalone-header
+                span Authentication required
+            .standalone-content
+                if typeof(message) !== "undefined" && message.length > 0
+                    .attention= message
+                form(method="POST", action="/login")
+                    .item.credential
+                        label.cover(for="username") Username
+                        input.editable(type="text", id="username", name="username", required="required", placeholder="Enter username", autofocus="autofocus")
+                    .item.credential
+                        label.cover(for="password") Password
+                        input.editable(type="password", id="password", name="password", required="required", placeholder="Enter passphrase")
+                    .actions.align-right
+                        input.action(type="submit", value="Login")

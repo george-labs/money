@@ -1,0 +1,214 @@
+//- mixins for the app and the CMS
+
+@phi: 0.618034;
+
+.no-text-select () {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cache-image() {
+  background: no-repeat -999em 0;
+}
+
+.box-sizing (@sizing: border-box) {
+  -ms-box-sizing: @sizing;
+  -moz-box-sizing: @sizing;
+  -webkit-box-sizing: @sizing;
+  box-sizing: @sizing;
+}
+
+.radial-gradient (@begin: black, @end: white, @switch: 100%) {
+  background: @begin;
+  background: -moz-radial-gradient(center, ellipse farthest-side, @begin 0%, @end @switch);
+  background: -webkit-gradient(radial, center center, 0, center center, 100%, color-stop(0%, @begin), color-stop(@switch, @end));
+  background: -webkit-radial-gradient(center, circle farthest-side, @begin 0%, @end @switch);
+  background: -o-radial-gradient(center, ellipse farthest-side, @begin 0%, @end @switch);
+  background: -ms-radial-gradient(center, ellipse farthest-side, @begin 0%, @end @switch);
+  background: radial-gradient(ellipse at center, @begin 0%, @end @switch);
+}
+
+.transform (...) {
+  -webkit-transform: @arguments;
+  -moz-transform: @arguments;
+  -o-transform: @arguments;
+  -ms-transform: @arguments;
+  transform: @arguments;
+}
+
+.transform-origin (@origin: 50% 50%) {
+  transform-origin: @origin;
+  -ms-transform-origin: @origin;
+  -moz-transform-origin: @origin;
+  -o-transform-origin: @origin;
+  -webkit-transform-origin: @origin;
+}
+
+.rotation (@deg, @origin: 50% 50%) {
+  .transform(rotate(@deg));
+  .transform-origin(@origin);
+}
+
+.rounded-corners (@radius: 99em) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.drop-shadow (@x: 0, @y: 0.125em, @blur: 0.25em, @spread: 0, @alpha: 0.33) {
+  -webkit-box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+  box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+.inset-shadow (@x: 0, @y: 0.125em, @blur: 0.25em, @spread: 0, @alpha: 0.33) {
+  -webkit-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+  box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+.gradient (@begin: #d2d2d2, @end: #e6e6e6) {
+  background: @begin;
+  background: -moz-linear-gradient(top, @begin 0%, @end 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @begin), color-stop(100%, @end));
+  background: -webkit-linear-gradient(top, @begin 0%, @end 100%);
+  background: -o-linear-gradient(top, @begin 0%, @end 100%);
+  background: -ms-linear-gradient(top, @begin 0%, @end 100%);
+  background: linear-gradient(to bottom, @begin 0%, @end 100%);
+}
+
+.horizontal-gradient (@begin: #d2d2d2, @end: #e6e6e6) {
+  background: @begin;
+  background: -moz-linear-gradient(left, @begin 0%, @end 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, @begin), color-stop(100%, @end));
+  background: -webkit-linear-gradient(left, @begin 0%, @end 100%);
+  background: -o-linear-gradient(left, @begin 0%, @end 100%);
+  background: -ms-linear-gradient(left, @begin 0%, @end 100%);
+  background: linear-gradient(to right, @begin 0%, @end 100%);
+}
+
+.diagonal-stripes (@color: #287d9a, @thickness: 2rem) {
+  background-color: @color;
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+  background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+  -webkit-background-size: @thickness @thickness;
+  -moz-background-size: @thickness @thickness;
+  background-size: @thickness @thickness;
+  background-repeat: repeat;
+}
+
+// animations, transitions
+
+.transform(...) {
+  -webkit-transition: @arguments;
+  -ms-transition: @arguments;
+  -moz-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}
+
+.specific-transition (@property: all, @duration: 0.2s, @ease: ease-out) {
+  .transform(@property @duration @ease);
+}
+
+.position-transition (@duration: 0.2s, @ease: ease-out) {
+  .transform(top @duration @ease e(',') left @duration @ease);
+}
+
+.scale-transition (@duration: 0.2s, @ease: ease-out) {
+  -webkit-transition: -webkit-transform @duration @ease;
+  -ms-transition: -ms-transform @duration @ease;
+  -moz-transition: -moz-transform @duration @ease;
+  -o-transition: -o-transform @duration @ease;
+  transition: transform @duration @ease;
+}
+
+.no-transition () {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+//- mixins for CMS only
+
+.font-size (@remValue) {
+  @pxValue: (@remValue * 16);
+  font-size: ~"@{pxValue}px";
+  font-size: ~"@{remValue}rem";
+}
+
+.line-height (@remValue) {
+  @pxValue: (@remValue * 16);
+  line-height: ~"@{pxValue}px";
+  line-height: ~"@{remValue}rem";
+}
+
+.top (@remValue) {
+  @pxValue: (@remValue * 16);
+  top: ~"@{pxValue}px";
+  top: ~"@{remValue}rem";
+}
+
+.left (@remValue) {
+  @pxValue: (@remValue * 16);
+  left: ~"@{pxValue}px";
+  left: ~"@{remValue}rem";
+}
+
+.right (@remValue) {
+  @pxValue: (@remValue * 16);
+  right: ~"@{pxValue}px";
+  right: ~"@{remValue}rem";
+}
+
+.bottom (@remValue) {
+  @pxValue: (@remValue * 16);
+  bottom: ~"@{pxValue}px";
+  bottom: ~"@{remValue}rem";
+}
+
+.width (@remValue) {
+  @pxValue: (@remValue * 16);
+  width: ~"@{pxValue}px";
+  width: ~"@{remValue}rem";
+}
+
+.min-width (@remValue) {
+  @pxValue: (@remValue * 16);
+  min-width: ~"@{pxValue}px";
+  min-width: ~"@{remValue}rem";
+}
+
+.max-width (@remValue) {
+  @pxValue: (@remValue * 16);
+  max-width: ~"@{pxValue}px";
+  max-width: ~"@{remValue}rem";
+}
+
+.height (@remValue) {
+  @pxValue: (@remValue * 16);
+  height: ~"@{pxValue}px";
+  height: ~"@{remValue}rem";
+}
+
+.min-height (@remValue) {
+  @pxValue: (@remValue * 16);
+  min-height: ~"@{pxValue}px";
+  min-height: ~"@{remValue}rem";
+}
+
+.max-height (@remValue) {
+  @pxValue: (@remValue * 16);
+  max-height: ~"@{pxValue}px";
+  max-height: ~"@{remValue}rem";
+}

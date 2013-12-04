@@ -1,0 +1,36 @@
+extends /page
+
+block content
+    .question.question-8.freeze
+        form(role='main', id=page.name, method='POST', action=nextPage.name)
+            .progress.note.invert 8/8
+
+            .instruction
+                - var pageElement = pageElements['instruction']
+                include /elements/element
+
+            .context.note.emphasis
+                - var pageElement = pageElements['question']
+                include /elements/element
+
+            ol.semantic.puzzles.shares
+                each pageElement, index in page.getElements('share-')
+                    - var share = index + 1;
+                    li.puzzle.share.inactive
+                        input.hidden(type='radio', name='q8', id=pageElement.uid, value=share)
+                        p.list-text.note.emphasis.invert(id='share-text-#{share}')
+                            include /elements/element
+
+            .continue
+                a.banner.note.emphasis.invert.done(href='get-ready')
+                    - var pageElement = pageElements['next']
+                    include /elements/element
+                input.hidden(type='submit', name='q', value='8')
+
+        if !isAdmin
+            .svg-frame(id='svg-frame')
+                .pie-chart
+                    .options
+                .bar-chart
+
+

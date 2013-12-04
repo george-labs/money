@@ -1,0 +1,4 @@
+if !isAdmin && settings
+    each setting in settings
+        if setting.isMetaTag()
+            meta(name= setting.name, content= setting.value)

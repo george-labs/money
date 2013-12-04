@@ -1,0 +1,11 @@
+extends /page
+
+block content
+    .imprint.static.highlight(role='main', id=page.name)
+
+        h2.banner.note.emphasis.invert
+            - var pageElement = pageElements['header']
+            include /elements/element
+
+        each pageElement in page.getElements('imprint')
+            include /elements/element

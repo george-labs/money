@@ -1,0 +1,7 @@
+if menuPage
+    .alert.outdated
+        p
+            img(src='/img/alert.outdated.png')
+            each pageElement in menuPage.getElements('note-')
+                include /elements/element
+                br

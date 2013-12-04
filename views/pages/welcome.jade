@@ -1,0 +1,27 @@
+extends /page
+
+block content
+    .welcome.freeze(role='main')
+        .line
+            .lead-in
+                .title.invert.caption.emphasis= config.title
+                .tagline.note.invert.emphasis
+                    - var pageElement = pageElements['tagline']
+                    include /elements/element
+        .line
+        .hand
+
+        .continue
+            a.ir(href=nextPage.name) &#8594;
+
+append notifications
+    .alert.please-rotate
+        - var pageElement = pageElements['note-orientation']
+        include /elements/element
+    .alert.no-mobile
+        - var pageElement = pageElements['note-screensize']
+        include /elements/element
+    - var pageElement = pageElements['note-cookies']
+    - if (isAdmin || pageElement.getProperty('Text').value.length > 0)
+        .alert.cookies.selectable
+            include /elements/element

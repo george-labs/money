@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="100%"
+   height="100%"
+   viewBox="0 0 50 50"
+   xml:space="preserve">
+
+<g transform="translate(25, 25)"><g class="slice"><path transform="rotate(90) scale(1.15, 1.15)" fill="#fe6f48" d="M-19.021130325903073,-6.1803398874989455A20,20 0 0,1 -3.673819061467132e-15,-20L0,0Z"></path></g><g class="slice"><path transform="rotate(90)" fill="#407fa2" d="M1.2246063538223773e-15,-20A20,20 0 1,1 -19.021130325903073,-6.1803398874989455L0,0Z"></path></g></g></svg>
+
