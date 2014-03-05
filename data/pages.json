@@ -106,27 +106,17 @@
                 },
                 {
                     "name": "Paragraph",
-                    "uid": "header-1",
+                    "uid": "initiative-1",
                     "properties": [
                         {
                             "name": "Text",
-                            "value": "An initial core group of the European members of WSBI (World Savings Banks Institute) and ESBG (European Savings and Retail Banking Group) have decided to join forces and launch a coordinated Financial Health Initiative (FHI) under the auspices of WSBI-ESBG."
-                        }
-                    ]
-                },
-                {
-                    "name": "Paragraph",
-                    "uid": "header-2",
-                    "properties": [
-                        {
-                            "name": "Text",
-                            "value": "The cornerstone of the FHI is an innovative and holistic approach to giving advice based on the customer’s assessment of his or her financial health. The vision is to ensure that maintaining financial health becomes a way of life among the many, underpinned by such values as fairness, access and transparency. The FHI builds on the wide range of financial education and financial inclusion programmes carried out by WSBI-ESBG members."
+                            "value": "An initial core group of the European members of WSBI (World Savings and Retail Banking Institute) and ESBG (European Savings and Retail Banking Group) have decided to join forces and launch a coordinated Financial Health Initiative (FHI) under the auspices of WSBI-ESBG."
                         }
                     ]
                 },
                 {
                     "name": "Heading",
-                    "uid": "definition",
+                    "uid": "initiative-definition-label",
                     "properties": [
                         {
                             "name": "Text",
@@ -136,7 +126,7 @@
                 },
                 {
                     "name": "Paragraph",
-                    "uid": "definition-1",
+                    "uid": "initiative-definition-text-1",
                     "properties": [
                         {
                             "name": "Text",
@@ -145,78 +135,28 @@
                     ]
                 },
                 {
-                    "name": "Heading",
-                    "uid": "relevance",
+                    "name": "Paragraph",
+                    "uid": "initiative-definition-text-2",
                     "properties": [
                         {
                             "name": "Text",
-                            "value": "Relevance to customers and the general public"
+                            "value": "The cornerstone of the FHI is an innovative and holistic approach to giving advice based on the customer’s assessment of his or her financial health. The vision is to ensure that maintaining financial health becomes a way of life among the many, underpinned by such values as fairness, access and transparency. The FHI builds on the wide range of financial education and financial inclusion programmes carried out by WSBI-ESBG members."
                         }
                     ]
                 },
                 {
                     "name": "Paragraph",
-                    "uid": "relevance-1",
+                    "uid": "initiative-definition-text-3",
                     "properties": [
                         {
                             "name": "Text",
-                            "value": "In order to support this vision, WSBI-ESBG member organisations are implementing the structure and activities necessary to:"
-                        }
-                    ]
-                },
-                {
-                    "name": "Text",
-                    "uid": "relevance-1-list-1",
-                    "properties": [
-                        {
-                            "name": "Text",
-                            "value": "raise awareness amongst WSBI-ESBG member bank customers and the general public of the importance of financial health and making financial decisions in an educated manner;"
-                        }
-                    ]
-                },
-                {
-                    "name": "Text",
-                    "uid": "relevance-1-list-2",
-                    "properties": [
-                        {
-                            "name": "Text",
-                            "value": "encourage member bank customers and the general public to assess their financial health regularly, with tools that are made available by their bank;"
-                        }
-                    ]
-                },
-                {
-                    "name": "Text",
-                    "uid": "relevance-1-list-3",
-                    "properties": [
-                        {
-                            "name": "Text",
-                            "value": "encourage member bank customers to make an appointment with a client adviser to analyse the results of the financial health assessment and to receive appropriate advice on ways and means to build up and maintain an optimal level of financial health."
-                        }
-                    ]
-                },
-                {
-                    "name": "Paragraph",
-                    "uid": "relevance-2",
-                    "properties": [
-                        {
-                            "name": "Text",
-                            "value": "The FHI is an ambitious and long-term project, which will not necessarily be carried out in exactly the same way by all participating member organisations. It is, however, based on a common concept that has been elaborated and endorsed within WSBI-ESBG and members will use the same financial health assessment tool. This tool, which is called MONEY, has been designed specifically for the FHI, based on specifications elaborated by a WSBI-ESBG working group, and has been developed within Erste Group’s Digital Innovation Unit “BeeOne”."
-                        }
-                    ]
-                },
-                {
-                    "name": "Paragraph",
-                    "uid": "relevance-3",
-                    "properties": [
-                        {
-                            "name": "Text",
-                            "value": "WSBI-ESBG represent the global and European voice of savings and retail banks. All WSBI- ESBG members respect the 3R principles of being retail-oriented, regionally-focused and responsible members of their communities. Further information on WSBI-ESBG can be accessed on the website below:"
+                            "value": "Further information can be accessed on the website below:"
                         }
                     ]
                 },
                 {
                     "name": "Link",
-                    "uid": "relevance-3-list-1",
+                    "uid": "members-link-1",
                     "properties": [
                         {
                             "name": "Text",
