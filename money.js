@@ -269,6 +269,7 @@ app.get('/logout', function(req, res){
 
 app.get('/', systemReadyFilter, IndexController.indexAction(false));
 
+app.get('/continue/:choice', systemReadyFilter, IndexController.continueAction);
 app.get('/forward', systemReadyFilter, IndexController.forwardAction);
 app.get('/share/:service', systemReadyFilter, IndexController.shareAction);
 

@@ -184,7 +184,15 @@ var IndexController = {
                     }
 
                 ], function renderPage (err) {
-
+                    // persist forwardUrls - added to renderPage coz it needs data from both loadPages and trackProgress :-/
+                    if (page.name === 'result' && req.session['result']) {
+                        var whatToDoNext = {};
+                        for (var i = 1; i <= 3; i += 1) {
+                            var linkElement = data.pages.currentElementsByName['persona-' + req.session['result'].index + '-action-' + i + '-link'];
+                            whatToDoNext['' + i] = linkElement.getProperty('URL').value;
+                        }
+                        req.session['forwardUrl'] = whatToDoNext;
+                    }
                     res.render (page.template, {
                         config: Configuration.render (req),
                         isAdmin: isAdmin,
@@ -391,6 +399,18 @@ var IndexController = {
         }
     },
 
+    continueAction: function (req, res) {
+        var choice = req.params.choice || 'invalid';
+        var targets = req.session['forwardUrl'];
+        if (choice && targets && targets.hasOwnProperty(choice)) {
+            statsSession.syncCurrent(req, { clicked: 'whatToDoNext' });
+            res.redirect(targets[choice]);
+        } else {
+            res.redirect('/error');
+        }
+    },
+
+    // deprecated as of 2014-09-12
     forwardAction: function (req, res) {
         var target = req.query.url;
         if (target) {
@@ -408,7 +428,7 @@ var IndexController = {
                 twitter: { track: 'shareOnTwitter', forward: 'https://twitter.com/share?url={url}' }
             },
             service = req.params.service || 'notFound';
-        if (services[service]) {
+        if (services.hasOwnProperty(service)) {
             statsSession.syncCurrent(req, { clicked: services[service].track });
             res.redirect(services[service].forward.replace(/\{url\}/, encodeURIComponent(Configuration.render(req).url)));
         } else {
