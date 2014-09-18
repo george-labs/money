@@ -410,17 +410,6 @@ var IndexController = {
         }
     },
 
-    // deprecated as of 2014-09-12
-    forwardAction: function (req, res) {
-        var target = req.query.url;
-        if (target) {
-            statsSession.syncCurrent(req, { clicked: 'whatToDoNext' });
-            res.redirect(target);
-        } else {
-            res.redirect('/error');
-        }
-    },
-
     shareAction: function (req, res) {
         var services = {
                 facebook: { track: 'shareOnFacebook', forward: 'https://www.facebook.com/sharer/sharer.php?u={url}' },
