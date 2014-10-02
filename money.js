@@ -119,7 +119,7 @@ app.configure(function() {
     app.use(express.methodOverride());
     if (dev) {
         Configuration.set('verbose', nconf.get('env'));
-        app.use(lessMiddleware({ src: path.join(__dirname, '/public') }));
+        app.use(lessMiddleware(path.join(__dirname, '/public')));
         app.use(express.static(path.join(__dirname, '/public')));
         app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
     } else {

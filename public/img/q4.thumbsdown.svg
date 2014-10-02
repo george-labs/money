@@ -39,7 +39,7 @@
     <path
        d="m 0,0 200.357,24.541 c 0,0 3.645,-49.037 0.646,-64.365 0,0 -81.181,-5.957 -85.853,-54.99 -23.133,-32.194 -22.053,-43.245 -4.319,-73.911 18.584,-32.121 -11.741,-54.207 -29.349,-30.037 -23.968,32.897 -11.507,64.619 -3.858,100.533 -4.84,0.951 -6.01,1.164 -21.403,-0.439 -1.695,-8.336 -8.367,-15.17 -17.245,-16.598 l -22.782,-3.63 c -11.448,-1.852 -22.265,5.96 -24.113,17.416 -0.744,4.609 0.08,9.117 2.077,12.977 -4.699,3.501 -7.792,8.593 -8.725,14.386 -0.969,6.031 0.567,11.892 3.852,16.515 -3.063,3.028 -5.23,7.016 -5.965,11.59 -1.007,6.246 0.862,12.301 4.624,16.823 -1.66,2.279 -2.821,4.964 -3.299,7.931 C -16.981,-11.168 -10.098,-1.629 0,0"
        id="path3017"
-       style="fill:#377c9f;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+       style="fill:#407fa2;fill-opacity:1;fill-rule:nonzero;stroke:none" />
   </g>
   <g
      transform="matrix(1.25,0,0,-1.25,102.96327,271.58138)"
@@ -47,7 +47,7 @@
     <path
        d="M 0,0 -32.496,-5.236"
        id="path3021"
-       style="fill:none;stroke:#1d1d1b;stroke-width:7.61899996;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" />
+       style="fill:none;stroke:#000000;stroke-width:7.61899996;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" />
   </g>
   <g
      transform="matrix(1.25,0,0,-1.25,299.41952,217.13798)"
@@ -55,7 +55,7 @@
     <path
        d="M 0,0 -56.74,-8.314 -72.501,99.197 -15.758,107.514 0,0 z"
        id="path3025"
-       style="fill:#377c9f;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+       style="fill:#407fa2;fill-opacity:1;fill-rule:nonzero;stroke:none" />
   </g>
   <g
      transform="matrix(1.25,0,0,-1.25,261.78164,207.52608)"
@@ -79,7 +79,7 @@
     <path
        d="M 0,0 -7.642,-10.264"
        id="path3037"
-       style="fill:none;stroke:#1d1d1b;stroke-width:3.80999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" />
+       style="fill:none;stroke:#000000;stroke-width:3.80999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" />
   </g>
   <g
      transform="matrix(1.25,0,0,-1.25,252.5129,183.29508)"
@@ -87,6 +87,6 @@
     <path
        d="M 0,0 10.271,-7.639"
        id="path3041"
-       style="fill:none;stroke:#1d1d1b;stroke-width:3.80999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" />
+       style="fill:none;stroke:#000000;stroke-width:3.80999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none" />
   </g>
 </svg>

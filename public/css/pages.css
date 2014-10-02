@@ -274,7 +274,7 @@
   height: 22em;
   top: 1em;
   right: 55%;
-  border: 3px dashed #387da0;
+  border: 3px dashed #407fa2;
   -webkit-border-radius: 99em;
   -moz-border-radius: 99em;
   -ms-border-radius: 99em;
@@ -682,7 +682,6 @@
   bottom: 1.5em;
   width: 66.67%;
   padding: 0 7em 9.5em 0;
-  color: #195b87;
   font-size: 2em;
   line-height: 1.1;
 }
@@ -895,7 +894,7 @@
 .question-5 .q5-svg.speech-bubble .frame {
   margin: 0 auto;
   position: absolute;
-  background: #387C9F;
+  background: #407fa2;
   border: solid 3px #ffffff;
   padding: 1.6em 3em;
   line-height: 1.25;
@@ -1132,7 +1131,7 @@
   width: 1.5em;
   line-height: 1.5em;
   margin: -1em 0 0 0.5em;
-  background-color: #387ca0;
+  background-color: #407fa2;
   -webkit-border-radius: 99em;
   -moz-border-radius: 99em;
   -ms-border-radius: 99em;
@@ -1242,13 +1241,13 @@
 .question-8 .option {
   position: absolute;
   font-size: 1.67em;
-  text-shadow: 2px 2px 0 #277A9A;
+  text-shadow: 2px 2px 0 #407fa2;
 }
 .question-8 .option:hover {
-  color: #FF6B50;
+  color: #fe6f48;
 }
 .question-8 .option.active {
-  color: #FF6B50;
+  color: #fe6f48;
 }
 .question-8 .option::before {
   content: '#';
@@ -1420,11 +1419,6 @@
 .static .link-list li {
   margin-top: 0.25em;
   margin-bottom: 0.25em;
-}
-.static .point-out li {
-  background: url(../img/continue.svg) left 0.5em no-repeat;
-  background-size: 1.5em auto;
-  padding-left: 2em;
 }
 .sitemap .title {
   font-size: 6em;

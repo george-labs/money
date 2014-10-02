@@ -32,23 +32,33 @@ module.exports = function (grunt) {
             }
         },
 
-        // concat js files
+        // concat files
         concat: {
             options: {
-                separator: ';',
                 process: function (src, filepath) {
-                    src = src.replace(/(^|\n)[ \t]*('use strict'|"use strict");?\s*/g, ''); // use strict statements
-                    src = src.replace(/\/\*[^\*]*\*\//g, ''); // block comments
-                    return '\n// ' + filepath + '\n' + src;
+                    if (filepath.indexOf('.js') !== -1) {
+                        src = src.replace(/(^|\n)[ \t]*('use strict'|"use strict");?\s*/g, ''); // use strict statements
+                        src = src.replace(/\/\*[^\*]*\*\//g, ''); // block comments
+                        src + src + ';';
+                        return '\n// ' + filepath + '\n' + src;
+                    } else {
+                        return src;
+                    }
                 }
             },
-            build: {
+            js: {
                 files: {
                     'public/js/main.min.js': ['public/js/jquery-ui-1.10.3.custom.min.js', 'public/js/jquery.ui.touch-punch.min.js', 'public/js/d3.v3.min.js'],
                     'public/js/play.min.js': ['public/js/pages.min.js'],
                     'public/js/cms.min.js': ['public/js/jquery.cookie.min.js', 'public/js/jquery.iframe-post-form.min.js', 'public/js/admin.min.js']
                 }
-            }
+            },
+            css: {
+                files: {
+                    'public/css/main.css': ['public/css/normalize.css', 'public/css/style.css', 'public/css/pages.css'],
+                    'public/css/cms.css': ['public/css/admin.css']
+                }
+            },
         },
 
         // compile less files
@@ -89,8 +99,9 @@ module.exports = function (grunt) {
         'build',
         'Builds the project',
         [   'uglify:build',
-            'concat:build',
+            'concat:js',
             'less:build',
+            'concat:css',
             'cssmin:minify'
         ]
     );

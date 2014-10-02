@@ -152,8 +152,8 @@ $(document).ready(function () {
         }
 
         function stampMouseout() {
-            d3.select('#yes .bg').style('fill', '#387CA0');
-            d3.select('#no .bg').style('fill', '#387CA0');
+            d3.select('#yes .bg').style('fill', '#407fa2');
+            d3.select('#no .bg').style('fill', '#407fa2');
         }
 
         function stamp(isOk) {
@@ -995,12 +995,12 @@ $(document).ready(function () {
                     overDropTarget = true;
 
                 } else if (trashIndex >= 4) {
-                    d3.selectAll('.trash svg .change-color').style('fill', '#387CA0');
+                    d3.selectAll('.trash svg .change-color').style('fill', '#407fa2');
                     overDropTarget = false;
                     layoutFrames();
 
                 } else {
-                    d3.selectAll('.trash svg .change-color').style('fill', '#387CA0');
+                    d3.selectAll('.trash svg .change-color').style('fill', '#407fa2');
                     overDropTarget = false;
                 }
 
@@ -1009,7 +1009,7 @@ $(document).ready(function () {
 
         drag.on('dragend', function () {
 
-            d3.selectAll('.trash svg .change-color').style('fill', '#387CA0');
+            d3.selectAll('.trash svg .change-color').style('fill', '#407fa2');
 
             if (overDropTarget) {
 

@@ -304,6 +304,10 @@ li.inactive {
   font-size: 1.25em;
   text-align: center;
 }
+.welcome .tagline {
+  position: relative;
+  z-index: 1;
+}
 .welcome .continue a {
   position: static;
 }
