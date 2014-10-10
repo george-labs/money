@@ -3,7 +3,7 @@ money
 
 MONEY Web Application | __“MONEY – Your Financial Health Check”__
 
-The _MONEY Web Application_ — henceforth referred to as _MONEY_ — is a financial assessment tool created by [BeeOne](https://www.beeone.at/vcard/) in Vienna, Austria for a core group of the European members of WSBI (World Savings and Retail Banks Institute) and ESBG (European Savings and Retail Banking Group).
+The _MONEY Web Application_ — henceforth referred to as _MONEY_ — is a financial assessment tool created by [BeeOne](https://www.beeone.at/) in Vienna, Austria for a core group of the European members of WSBI (World Savings and Retail Banks Institute) and ESBG (European Savings and Retail Banking Group).
 
 The tool is simply a web application that strives to make participants think about their relationship with money and financial matters in an entertaining way.
 
