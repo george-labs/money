@@ -1,7 +1,7 @@
-/*global grunt*/
-'use strict';
+/*global grunt, module: false */
 
 module.exports = function (grunt) {
+    'use strict';
 
     // Project configuration.
     grunt.initConfig({
@@ -39,7 +39,7 @@ module.exports = function (grunt) {
                     if (filepath.indexOf('.js') !== -1) {
                         src = src.replace(/(^|\n)[ \t]*('use strict'|"use strict");?\s*/g, ''); // use strict statements
                         src = src.replace(/\/\*[^\*]*\*\//g, ''); // block comments
-                        src + src + ';';
+                        src = src + ';';
                         return '\n// ' + filepath + '\n' + src;
                     } else {
                         return src;
@@ -58,7 +58,7 @@ module.exports = function (grunt) {
                     'public/css/main.css': ['public/css/normalize.css', 'public/css/style.css', 'public/css/pages.css'],
                     'public/css/cms.css': ['public/css/admin.css']
                 }
-            },
+            }
         },
 
         // compile less files
@@ -95,19 +95,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    grunt.registerTask(
-        'build',
-        'Builds the project',
-        [   'uglify:build',
-            'concat:js',
-            'less:build',
-            'concat:css',
-            'cssmin:minify'
-        ]
-    );
+    grunt.registerTask('build', 'Builds the project', ['uglify:build', 'concat:js', 'less:build', 'concat:css', 'cssmin:minify']);
 
     // Default task(s).
     grunt.registerTask('default', ['build']);
 
-}
-;
+};
