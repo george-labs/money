@@ -2,7 +2,7 @@ extends /page
 
 block content
 
-    form.question.multi-step.question-6.freeze(role='main', id=page.name, method='POST', action=nextPage.name)
+    form.question.multi-step.question-6.freeze(role='main', id=page.name, method='POST', action='/'+nextPage.name)
         .progress.note.invert 6/8
 
         .instruction
@@ -36,7 +36,7 @@ block content
 
         .continue.default.hidden.note.emphasis.invert
             a.next.ir &#8594;
-            a.done(href=nextPage.name)
+            a.done(href='/'+nextPage.name)
                 - var pageElement = pageElements['done']
                 include /elements/element
             input.hidden(type='submit', name='q', value='6')

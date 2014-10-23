@@ -2,7 +2,7 @@ extends /page
 
 block content
     .question.question-8.freeze
-        form(role='main', id=page.name, method='POST', action=nextPage.name)
+        form(role='main', id=page.name, method='POST', action='/'+nextPage.name)
             .progress.note.invert 8/8
 
             .instruction
@@ -22,7 +22,7 @@ block content
                             include /elements/element
 
             .continue
-                a.banner.note.emphasis.invert.done(href='get-ready')
+                a.banner.note.emphasis.invert.done(href='/get-ready')
                     - var pageElement = pageElements['next']
                     include /elements/element
                 input.hidden(type='submit', name='q', value='8')
