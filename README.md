@@ -1,5 +1,4 @@
-money
-=====
+# money
 
 MONEY Web Application | __“MONEY – Your Financial Health Check”__
 
@@ -8,8 +7,7 @@ The _MONEY Web Application_ — henceforth referred to as _MONEY_ — is a finan
 The tool is simply a web application that strives to make participants think about their relationship with money and financial matters in an entertaining way.
 
 
-Preparation
------------
+## Preparation
 
 MONEY can be hosted on a Linux or Windows server. There are no actual minimum requirements, but as a recommendation: 1.6GHz CPU, 1.75GB RAM, 10GB Storage. These minimum requirements would only apply if the machine would be set up and used solely for MONEY. However, it is more likely that the database will be installed on existing hardware. Therefore the components listed as follows will only be needed if not already present.
 
@@ -30,8 +28,7 @@ In case you choose to provide MONEY over a secure connection (recommended), you 
 With these components (and the certificate) on your operating system you should be able to get MONEY running. In addition, a web server (Apache2, nginx, or similar) is needed to make MONEY available to the outside world. In general, MONEY should be made available on a dedicated subdomain, e.g. https://money.example.com/.
 
 
-Installing the software
------------------------
+## Installing the software
 
 Before you proceed, make sure that the infrastructure components from the previous chapter are up and running, to avoid having to deal with a problem that originates from those components and has little or nothing to do with the installation of MONEY itself.
 
@@ -62,8 +59,7 @@ npm install
 Once the node package manager has successfully downloaded the plugins, you’re done.
 
 
-Configuring the software
-------------------------
+## Configuring the software
 
 The steps described in this chapter are intended to enable administrators to fine-tune the installation.
 
@@ -91,7 +87,7 @@ Whatever the content might be, it has to be a valid JSON file ([http://jsonlint.
   "database": {
     "host": "127.0.0.1",
     "port": 27017
-  }
+  },
   "centralDatabase": {
     "host": "money.savings-banks.com",
     "port": 443
@@ -118,8 +114,7 @@ The `centralDatabase` let's you define the connection information to the [MONEY 
 Any number of `users` can be specified to enable them to work with the MONEY CMS (Content Management System), but you only need two as there are two different roles (editor and chiefeditor) in the CMS. Refer to the CMS documentation for more details.
 
 
-Running the software
---------------------
+## Running the software
 
 If you are in your MONEY home directory, you could now run it for testing purposes.
 

@@ -1,5 +1,4 @@
-money CMS
-=========
+# money CMS
 
 MONEY Content Management System | __“MONEY – Your Financial Health Check”__
 
@@ -10,28 +9,24 @@ The _MONEY Content Management System_ — henceforth referred to as _CMS_ — is
 3. get statistical information about the application usage.
 
 
-Login
------
+## Login
 
 After MONEY has been [successfully set up and CMS users have been created](../README.md), these CMS users — each having one of the roles _editor_ or _chiefeditor_ — can log in to the CMS. The CMS is accessible by simply adding `/cms` to the actual application URL.  
-Example:  
-https://your-money-app-url.example.com__/cms__
+Example: https://your-money-app-url.example.com/cms
 
 Although the CMS does not enforce it, CMS users should change their password after their initial log in. The ‘change password’ button can be found on the main screen of the CMS.
 
 The reason for having two roles _editor_ and _chiefeditor_ is simply that not one person can single-handedly change the application behavior, given that a two-man rule is usually required for this kind of application in the financial industry.
 
 
-Overview
---------
+## Overview
 
 The CMS features a main menu at the top. It contains the necessary navigational links to all the relevant sections of the application, i.e. the main screen, METADATA, BRANDING, TRANSLATIONS, STATISTICS and LOGOUT.
 
 The first four sections provide a split screen view with an __action bar__ on the right hand side, while STATISTICS is a read-only section that displays statistical information covering the entire screen.
 
 
-Features for editors
---------------------
+## Features for editors
 
 The sections METADATA, BRANDING and TRANSLATIONS are the places where _editors_  can modify the application content.
 The latter two sections include a preview, changes made in the action bar take effect immediately.
@@ -46,8 +41,7 @@ In TRANSLATIONS, the action bar consists of four panels:
   * ‘History’, an additional feature only for _editors_, where the current translation for the selected element can be persisted. You can then easily jump back and forth between previously persisted versions and choose the one that suits you.
 
 
-Features for chief editors
---------------------------
+## Features for chief editors
 
 _chiefeditors_ cannot make any content modifications in the CMS. Instead they get read-only access to cross-check the changes made by _editors_.
 
@@ -64,8 +58,7 @@ Once you have published the application you most likely do not want to go offlin
 However, you could go offline after you no longer want to provide the application to your audience, but keep the CMS up und running in order to allow access to the STATISTICS section for _editors_ and _chiefeditors_.
 
 
-Advanced features on the CMS main screen
-----------------------------------------
+## Advanced features on the CMS main screen
 
 For _editors_, the action bar contains a ‘Local database’ panel, that allows the following 3 things.
 
@@ -76,14 +69,13 @@ For _editors_, the action bar contains a ‘Local database’ panel, that allows
 _chiefeditors_ see the ‘Local database’ panel only if there is a request to reset to factory settings from an _editor_, which they can then decide to fulfill.
 
 
-Special/hidden features
------------------------
+## Special/hidden features
 
 ### Incoming links
 
-On top of the CMS, the BRANDING is also customizable by a referer providing one or more of the following URL parameters.  
+On top of the CMS, the BRANDING is also customizable by a referer providing one or more of the following URL parameters.
 
-  * `logo`: a URL pointing to yuor company logo.
+  * `logo`: a URL pointing to your company logo.
   * `url`: a URL pointing to your company website (clicking the logo will lead to this URL).
   * `bg`: a CSS color value for the header background.
   * `text`: a CSS color value for the header text.
@@ -94,8 +86,7 @@ Important: If you want to test this you must not be logged into the CMS in your 
 > Overriding the branding specified in the CMS is something you will usually _not_ need, but it can be useful if the application is __hosted only once__ for multiple corporations or individually branded entities within a corporation.  
 > Providing a `cid` on the other hand might come in handy for anyone.
 
-Example:  
-https://your-money-app-url.example.com/?url=https%3A%2F%2Fcompany.example.com%2F&logo=https%3A%2F%2Fcompany.example.com%2Flogo.png&bg=rgb(33%2C99%2C255)
+Example: https://your-money-app-url.example.com/?url=https%3A%2F%2Fcompany.example.com%2F&logo=https%3A%2F%2Fcompany.example.com%2Flogo.png&bg=rgb(33%2C99%2C255)
 
 Additionally to the four BRANDING-related URL parameters, you can also provide an identifier when calling the application, see next chapter for details.
 
@@ -108,7 +99,6 @@ You can augment your outgoing links with an URL parameter named `cid` followed b
 
 The application looks for occurences of `cid=` within links and adds an incoming `cid` (see above) specified by a referer. By doing do, the original referer/caller can __pass information through the application__ to the final link target.
 
-Example:  
-https://company.example.com/my-product?cid=
+Example: https://company.example.com/my-product?cid=
 
 Any combination with other URL parameters is supported. You can even add a value, e.g. `cid=default`. This value is then kept in place if no incoming `cid` has been provided; otherwise it will be replaced.
